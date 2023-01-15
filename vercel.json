@@ -1,0 +1,10 @@
+{
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://revcd.com/projects/rss-explore",
+      "permanent": true
+    }
+  ]
+}
