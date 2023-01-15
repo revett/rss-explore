@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: RSS Explore API
+  description: Tools to help you easily find and manage RSS feeds.
+  version: 0.1.0
+servers:
+  - url: https://rss-explore.revcd.com
+    description: Production
+  - url: http://localhost:5691
+    description: Local
+
+paths:
+  /youtube/convert:
+    post:
+      summary: Converts a YouTube URL in to a RSS feed for the YouTube channel.
+      description: Converts a YouTube URL in to a RSS feed for the YouTube channel.
+      operationId: Convert
+      requestBody:
+        description: YouTube URL to convert
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConvertURL"
+      responses:
+        "200":
+          description: Success, Youtube channel RSS feed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RSSFeed"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    ConvertURL:
+      required:
+        - url
+      properties:
+        url:
+          type: string
+          description: is the YouTube URL to convert.
+          x-oapi-codegen-extra-tags:
+            validate: "required,url"
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+          description: is the HTTP status code for the error.
+        message:
+          type: string
+          description: is the message of the error.
+    RSSFeed:
+      required:
+        - url
+      properties:
+        url:
+          type: string
+          description: is the RSS feed for the YouTube channel.
