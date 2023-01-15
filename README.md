@@ -20,7 +20,7 @@ Tools to help you easily find and manage RSS feeds.
 go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
 
 # Generate the API models, server implementation, and spec
-oapi-codegen --config oapi-codegen.yml rss-explore.openapi.yml
+make generate
 ```
 
 ### Production

@@ -1,10 +1,10 @@
 generate:
-	@go generate ./...
+	@oapi-codegen --config oapi-codegen.yml rss-explore.openapi.yml
 
 lint:
 	@golangci-lint run
 
-run:
+run: generate
 	@go build .
 	@./rss-explore
 
