@@ -13,7 +13,7 @@ import (
 
 // Convert is the entrypoint for the Vercel serverless function; it is a wrapper
 // around the handler.Convert function.
-func Convert(w http.ResponseWriter, r *http.Request) {
+func Convert(w http.ResponseWriter, r *http.Request) { //nolint:varnamelen
 	log.Logger = commonLog.New()
 
 	e := echo.New() //nolint:varnamelen
