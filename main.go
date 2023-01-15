@@ -24,15 +24,6 @@ func main() {
 		},
 	))
 
-	swagger, err := api.GetSwagger()
-	if err != nil {
-		log.Fatal().Err(err).Msg("loading swagger spec")
-	}
-
-	// Clear out the servers array in the swagger spec, that skips validating
-	// that server names match.
-	swagger.Servers = nil
-
 	api.RegisterHandlers(e, server.Server{})
 
 	if err := e.Start(port); err != nil {
