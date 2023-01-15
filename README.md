@@ -11,7 +11,9 @@ Tools to help you easily find and manage RSS feeds.
 
 [**→ 📖 Documentation**](https://revcd.com/projects/rss-explore) (`revcd.com`)
 
-## Production
+## Development
+
+### Production
 
 - [Vercel](https://github.com/vercel/vercel) deploys each `.go` file within
   `api/` as a
@@ -19,7 +21,7 @@ Tools to help you easily find and manage RSS feeds.
 - Each of these are wrappers around a handler function within the
   `internal/handler` package, which holds the business logic of the API
 
-## Local Development
+### Local
 
 ```
 make run
