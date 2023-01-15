@@ -16,8 +16,8 @@ Tools to help you easily find and manage RSS feeds.
 Convert a YouTube video URL in to the RSS feed for that video's channel:
 
 ```bash
-curl -l -s \
-  -r POST 'https://rss-explore.revcd.com/youtube/convert' \
+curl --location --silent \
+  --request POST 'https://rss-explore.revcd.com/youtube/convert' \
   --header 'Content-Type: application/json' \
   --data-raw '{
     "url": "https://www.youtube.com/watch?v=7LICrnxWd38"
