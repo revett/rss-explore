@@ -1,5 +1,10 @@
 # rss-explore
 
+[![GoDoc](https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/revett/rss-explore)
+[![Builds](https://img.shields.io/github/checks-status/revett/rss-explore/main?label=build&style=flat-square)](https://github.com/revett/rss-explore/actions?query=branch%3Amain)
+[![Go Report Card](https://goreportcard.com/badge/github.com/revett/rss-explore?style=flat-square)](https://goreportcard.com/report/github.com/revett/rss-explore)
+[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://github.com/revett/rss-explore/blob/main/LICENSE)
+
 Tools to help you easily find and manage RSS feeds.
 
 ## Production
