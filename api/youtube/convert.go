@@ -19,6 +19,7 @@ func Convert(w http.ResponseWriter, r *http.Request) { //nolint:varnamelen
 	e := echo.New() //nolint:varnamelen
 	e.Use(commonMiddleware.LoggerUsingZerolog(log.Logger))
 	e.Use(middleware.RequestID())
+	e.Use(middleware.CORS())
 	e.Use(middleware.RecoverWithConfig(
 		middleware.RecoverConfig{
 			DisablePrintStack: true,
