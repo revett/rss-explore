@@ -7,6 +7,10 @@
 
 Tools to help you easily find and manage RSS feeds.
 
+## Usage
+
+[**→ 📖 Documentation**](https://revcd.com/projects/rss-explore) (`revcd.com`)
+
 ## Production
 
 - [Vercel](https://github.com/vercel/vercel) deploys each `.go` file within
