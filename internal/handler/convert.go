@@ -28,8 +28,15 @@ func Convert(ctx echo.Context) error {
 		return returnErrorType(ctx, http.StatusBadRequest, "invalid youtube url")
 	}
 
+	channelID, err := youtube.FetchYouTubeChannelID(videoID)
+	if err != nil {
+		return returnErrorType(
+			ctx, http.StatusInternalServerError, "fetching channel id",
+		)
+	}
+
 	resp := api.RSSFeed{
-		URL: videoID,
+		URL: channelID,
 	}
 
 	if err := ctx.JSON(http.StatusOK, resp); err != nil {
