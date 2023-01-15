@@ -45,6 +45,7 @@ components:
         url:
           type: string
           description: is the YouTube URL to convert.
+          x-go-name: URL
           x-oapi-codegen-extra-tags:
             validate: "required,url"
     Error:
@@ -66,3 +67,4 @@ components:
         url:
           type: string
           description: is the RSS feed for the YouTube channel.
+          x-go-name: URL
