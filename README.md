@@ -20,7 +20,7 @@ curl --location --silent \
   --request POST 'https://rss-explore.revcd.com/youtube/convert' \
   --header 'Content-Type: application/json' \
   --data-raw '{
-    "url": "https://www.youtube.com/watch?v=7LICrnxWd38"
+    "url": "https://youtube.com/watch?v=7LICrnxWd38"
   }' | jq '.url'
 ```
 
