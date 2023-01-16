@@ -21,12 +21,19 @@ curl --location --silent \
   --header 'Content-Type: application/json' \
   --data-raw '{
     "url": "https://youtube.com/watch?v=7LICrnxWd38"
-  }' | jq '.url'
+  }' | jq -r '.url'
 ```
 
 ```bash
 "https://youtube.com/feeds/videos.xml?channel_id=UCWaC58KxHxyCgZVl4cRDxSg"
 ```
+
+## Raycast
+
+Import the [`raycast-rss-explore.sh`](./raycast-rss-explore.sh) file as a
+[Raycast Script Command](https://github.com/raycast/script-commands).
+
+![Screenshot of the Raycast Script Command](./assets/raycast_screenshot.png)
 
 ## Development
 
