@@ -8,7 +8,7 @@ require (
 	github.com/revett/common v0.0.0-20220802124857-c7a14ac4f05f
 	github.com/rs/zerolog v1.29.0
 	github.com/stretchr/testify v1.8.1
-	google.golang.org/api v0.108.0
+	google.golang.org/api v0.109.0
 )
 
 require (
