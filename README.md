@@ -9,10 +9,6 @@ Tools to help you easily find and manage RSS feeds.
 
 ## Usage
 
-[**→ 📖 Documentation**](https://revcd.com/projects/rss-explore) (`revcd.com`)
-
-## Examples
-
 Convert a YouTube video URL in to the RSS feed for that video's channel:
 
 ```bash
