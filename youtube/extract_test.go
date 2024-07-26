@@ -3,11 +3,11 @@ package youtube_test
 import (
 	"testing"
 
-	"github.com/revett/rss-explore/internal/youtube"
+	"github.com/revett/rss-explore/youtube"
 	"github.com/stretchr/testify/require"
 )
 
-func TestFoo(t *testing.T) {
+func TestExtractVideoID(t *testing.T) {
 	t.Parallel()
 
 	tests := map[string]struct {

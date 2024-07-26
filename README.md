@@ -21,7 +21,7 @@ curl --location --silent \
 ```
 
 ```bash
-"https://youtube.com/feeds/videos.xml?channel_id=UCWaC58KxHxyCgZVl4cRDxSg"
+"https://www.youtube.com/feeds/videos.xml?channel_id=UCWaC58KxHxyCgZVl4cRDxSg"
 ```
 
 ## Raycast

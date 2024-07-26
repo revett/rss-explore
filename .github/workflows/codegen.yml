@@ -1,4 +1,4 @@
-name: Test
+name: Codegen
 
 on: [push]
 
@@ -20,5 +20,15 @@ jobs:
         with:
           go-version: ${{ steps.go-version.outputs.version }}
 
-      - name: Test with coverage
-        run: make test
+      - name: Install deepmap/oapi-codegen
+        run: go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
+
+      - name: Run go generate
+        run: make generate
+
+      - name: Check for changes
+        run: |
+          if ! git diff --exit-code; then
+            echo "Changes were detected after running go generate."Pj
+            exit 1
+          fi

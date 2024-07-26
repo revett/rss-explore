@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-playground/validator/v10"
 	"github.com/labstack/echo/v4"
-	"github.com/revett/rss-explore/internal/youtube"
 	"github.com/revett/rss-explore/pkg/api"
+	"github.com/revett/rss-explore/youtube"
 )
 
 // Convert takes a YouTube URL and hands back an RSS feed URL to the YouTube
@@ -37,7 +37,7 @@ func Convert(ctx echo.Context) error {
 
 	resp := api.RSSFeed{
 		URL: fmt.Sprintf(
-			"https://youtube.com/feeds/videos.xml?channel_id=%s", channelID,
+			"https://www.youtube.com/feeds/videos.xml?channel_id=%s", channelID,
 		),
 	}
 

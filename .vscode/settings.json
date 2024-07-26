@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-action.json": "file:///Users/revett/projects/github.com/revett/rss-explore/.github/workflows/codegen.yml"
+  }
+}

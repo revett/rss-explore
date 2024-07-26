@@ -2,7 +2,7 @@ package server
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/revett/rss-explore/internal/handler"
+	"github.com/revett/rss-explore/handler"
 )
 
 // Server implements the api.ServerInterface interface.
