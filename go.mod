@@ -2,8 +2,6 @@ module github.com/revett/rss-explore
 
 go 1.21
 
-toolchain go1.22.4
-
 require (
 	github.com/go-playground/validator/v10 v10.22.0
 	github.com/labstack/echo/v4 v4.12.0
