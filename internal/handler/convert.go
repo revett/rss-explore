@@ -37,7 +37,7 @@ func Convert(ctx echo.Context) error {
 
 	resp := api.RSSFeed{
 		URL: fmt.Sprintf(
-			"https://youtube.com/feeds/videos.xml?channel_id=%s", channelID,
+			"https://www.youtube.com/feeds/videos.xml?channel_id=%s", channelID,
 		),
 	}
 

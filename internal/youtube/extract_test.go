@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestFoo(t *testing.T) {
+func TestExtractVideoID(t *testing.T) {
 	t.Parallel()
 
 	tests := map[string]struct {

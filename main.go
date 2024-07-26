@@ -10,7 +10,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-const port = ":5691"
+const port = "localhost:5691"
 
 func main() {
 	log.Logger = commonLog.New()

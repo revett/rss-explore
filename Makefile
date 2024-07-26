@@ -10,3 +10,7 @@ run: generate
 
 test:
 	@go test -cover ./...
+
+update-deps:
+	go get -u ./...
+	go mod tidy
