@@ -7,7 +7,7 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 	commonLog "github.com/revett/common/log"
 	commonMiddleware "github.com/revett/common/middleware"
-	"github.com/revett/rss-explore/internal/handler"
+	"github.com/revett/rss-explore/handler"
 	"github.com/rs/zerolog/log"
 )
 
